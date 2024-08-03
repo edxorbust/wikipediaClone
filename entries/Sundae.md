@@ -1,9 +1,3 @@
-# Sundae
+#Sundae
 
-
-
-
-
-
-
-She is a cute kitty but pretty spicy
+She's a cute kitty but spicy

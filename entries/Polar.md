@@ -1,3 +1,3 @@
-# Polar
+#Polar
 
-She is a cute kitty also
+She's a cute kitty :)
