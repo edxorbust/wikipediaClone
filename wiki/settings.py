@@ -32,6 +32,7 @@ ALLOWED_HOSTS = ['web-production-90bf7.up.railway.app']
 
 INSTALLED_APPS = [
     'encyclopedia',
+    'whitenoise.runserver_nostatic',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -44,6 +45,7 @@ CSRF_TRUSTED_ORIGINS = ['https://web-production-90bf7.up.railway.app']
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -123,3 +125,5 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 STATIC_ROOT = 'staticfiles/'
+
+STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
